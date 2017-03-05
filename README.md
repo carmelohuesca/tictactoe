@@ -1,11 +1,13 @@
 # Juego TIC-TAC-TOE
 
-Juego 3 en raya:
+Juego 3 en raya desarrollado en Typescript con angular 
 
 ![](./src/assets/img/tic-tac-toe.png)
 
-## Tablero:
+## Requerimientos:
+Requerimientos de la aplicación
 
+### Tablero:
   1. existe la instancia
   2. ... inicialmente
   3. el tablero tiene 9 valores
@@ -15,7 +17,7 @@ Juego 3 en raya:
   7. no puedo marcar una posición en el tablero si ya tiene un valor
   8. gana un valor cuando hace tres en raya
 
-## Juego:
+### Juego:
   1. existe la instancia
   2. ... inicialmente
   3. las rondas se almacenan en "rounds" se inicia a 0
@@ -30,12 +32,61 @@ Juego 3 en raya:
   12. ... desarrollo del juego
   13. El juego se reinicia cuando gana algún jugador
 
-## Jugador 3enRaya:
+### Jugador 3enRaya:
   1. existe la instancia
   2. se almacena un valor del jugador
 
-## Jugador:
+### Jugador:
   1. existe la instancia
   2. se almacena el nombre del jugador
 
+
+## Ejecución
+
+    $ npm start
+
+## Calidad del código
+
+Para lanzar las reglas de calidad del código ejecutar
+
+    $ ng lint
+
+## Test Karma
+
+Desarrollo guiado por Test (TDD)
+
+    $ npm test
+
+Pasada simple del test
+
+    $ ng test --single-run
+
+Cobertura del código
+
+    $ ng test --single-run --code-coverage
+
+## Test e2e
+
+    $ npm run e2e
+
+Levanta un servidor en http://localhost:4200
+
+## Entornos
+
+       ng-build --target=production
+       ng-build --target=development
+
+## Instrucciones angular-cli
+
+Scaffold  | Usage
+---       | ---
+Component | `ng g component my-new-component`
+Directive | `ng g directive my-new-directive`
+Pipe      | `ng g pipe my-new-pipe`
+Service   | `ng g service my-new-service`
+Class     | `ng g class my-new-class`
+Interface | `ng g interface my-new-interface`
+Enum      | `ng g enum my-new-enum`
+Module    | `ng g module my-module`
+Routing   | `ng g module modules/module-name --routing`
 
