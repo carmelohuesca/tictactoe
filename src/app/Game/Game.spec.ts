@@ -5,16 +5,13 @@ describe('Game', () => {
   const PLAYER_ONE = 'pepe';
   const PLAYER_TWO = 'jose';
 
-
-  beforeEach(
-    () => {
-      instance = new Game(PLAYER_ONE, PLAYER_TWO);
-    });
+  beforeEach(() => {
+    instance = new Game(PLAYER_ONE, PLAYER_TWO);
+  });
 
   it('El juego se instancia', () => {
     expect(instance).toBeDefined();
   });
-
 
   describe('inicialmente', () => {
     it('las rondas se almacenan en "rounds" se inicia a 0', () => {
@@ -70,7 +67,6 @@ describe('Game', () => {
       expect(instance.status).toBe(Game.WAITING);
     });
   });
-
 
 });
 

@@ -6,7 +6,7 @@ export class Game {
 
   static AI = 'AI';
   static NEW_GAME = 'Nuevo juego';
-  static WAITING = 'Esperando';
+  static WAITING = 'Su turno';
 
   rounds: number;
   status: string;
